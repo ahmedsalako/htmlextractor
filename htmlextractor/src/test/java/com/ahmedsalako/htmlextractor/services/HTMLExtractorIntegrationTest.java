@@ -64,10 +64,7 @@ public class HTMLExtractorIntegrationTest {
 		//Translating the serialised string JSON back to JSON object model for unit testing purpose
 		JsonParser parser = new JsonParser();
 		JsonObject jsonObject = parser.parse(json).getAsJsonObject();
-		
-		System.out.println(jsonObject.get("total"));
-		System.out.println(productResult.getTotal().toString());
-		
+				
 		assertEquals(productResult.getTotal().toString(), jsonObject.get("total").getAsString());
 		assertEquals(productResult.getResults().size(), jsonObject.get("results").getAsJsonArray().size());
 		

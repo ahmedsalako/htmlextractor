@@ -52,7 +52,6 @@ public class ProductRepositoryImplTest {
 	 */
 	@Test
 	public void ensureRepositoryGetAll() throws IOException {
-		System.out.println(productDetailsDocument);
 		HTMLConnectionFactory connectionFactory = Mockito.mock(HTMLConnectionFactory.class);
 		
 		ResourceConnection productsConnection = Mockito.mock(ResourceConnection.class);
